@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Download } from "lucide-react";
 import { profile } from "@/lib/data";
+import { basePath } from "@/lib/basePath";
 
 export default function About() {
   return (
@@ -16,15 +17,15 @@ export default function About() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="relative aspect-[4/5] w-full max-w-md mx-auto md:mx-0"
         >
+          iimport { basePath } from "@/lib/basePath";
           <div className="relative h-full w-full overflow-hidden rounded-[28px] border border-line bg-surface">
-            <Image
-              src="/images/profile/about-portrait.png"
+            <img
+              src={`${basePath}/images/profile/about-portrait.png`}
               alt={`${profile.name} — ${profile.title}`}
-              fill
-              sizes="(max-width: 768px) 320px, 420px"
-              className="object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
+
         </motion.div>
 
         <motion.div
