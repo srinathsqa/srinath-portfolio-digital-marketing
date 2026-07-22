@@ -15,7 +15,7 @@ export const profile = {
     instagram: "https://www.instagram.com/srinath_pix",
     github: "https://github.com/srinathsqa",
   },
-  resumeUrl: "https://drive.google.com/file/d/1pWDqtyAFa4j4bJxRIWmW_WHIuJJKc08P/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1UCjwcKl14z0YC6JFb1f-Tbhg74EBYtjk/view?usp=sharing",
 };
 
 export const rotatingRoles = [
