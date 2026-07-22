@@ -17,7 +17,7 @@ export default function About() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="relative aspect-[4/5] w-full max-w-md mx-auto md:mx-0"
         >
-          iimport { basePath } from "@/lib/basePath";
+          
           <div className="relative h-full w-full overflow-hidden rounded-[28px] border border-line bg-surface">
             <img
               src={`${basePath}/images/profile/about-portrait.png`}
