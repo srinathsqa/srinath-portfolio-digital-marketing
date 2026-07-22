@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { clients } from "@/lib/data";
+import { basePath } from "@/lib/basePath";
 
 export default function Clients() {
   return (
@@ -28,14 +28,12 @@ export default function Clients() {
               className="rounded-2xl border border-line bg-surface p-7 transition-colors duration-300 hover:border-signal/40"
             >
               <div className="flex h-14 w-full items-center justify-start rounded-xl bg-white/95 px-4">
-                <Image
-                  src={client.logo}
-                  alt={`${client.name} logo`}
-                  width={140}
-                  height={40}
-                  className="h-9 w-auto max-w-[140px] object-contain"
-                />
-              </div>
+                  <img
+                    src={`${basePath}${client.logo}`}
+                    alt={`${client.name} logo`}
+                    className="h-9 w-auto max-w-[140px] object-contain"
+                  />
+                </div>
               <h3 className="mt-6 font-display text-lg">{client.name}</h3>
               <p className="mt-2 text-sm text-muted">{client.services}</p>
               <button className="mt-6 inline-flex items-center gap-1.5 text-sm text-signal">
