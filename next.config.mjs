@@ -2,7 +2,7 @@
 const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 
 // If deploying to https://<user>.github.io/<repo>, set repo name here.
-const repoName = "srinath-portfolio";
+const repoName = "srinath-portfolio-digital-marketing";
 
 const nextConfig = {
   output: "export",
