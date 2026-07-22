@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { experience } from "@/lib/data";
+import { basePath } from "@/lib/basePath";
 
 export default function Experience() {
   return (
@@ -29,14 +30,12 @@ export default function Experience() {
                 className="relative flex flex-col sm:flex-row gap-6 sm:gap-10 sm:pl-[76px]"
               >
                 <div className="absolute left-0 top-1 hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-white/95 overflow-hidden p-2">
-                  <Image
-                    src={job.logo}
-                    alt={`${job.company} logo`}
-                    width={44}
-                    height={44}
-                    className="h-full w-full object-contain"
-                  />
-                </div>
+                        <img
+                          src={`${basePath}${job.logo}`}
+                          alt={`${job.company} logo`}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
 
                 <div className="flex-1 rounded-2xl border border-line bg-surface p-7">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -48,11 +47,9 @@ export default function Experience() {
                     </span>
                   </div>
                   <p className="mt-1 text-sm text-muted flex items-center gap-2">
-                    <Image
-                      src={job.logo}
+                    <img
+                      src={`${basePath}${job.logo}`}
                       alt=""
-                      width={16}
-                      height={16}
                       className="sm:hidden h-4 w-4 object-contain rounded bg-white/95 p-0.5"
                     />
                     {job.company}

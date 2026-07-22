@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Play, X, Clock } from "lucide-react";
 import { videos } from "@/lib/data";
+import { basePath } from "@/lib/basePath";
 
 function getYouTubeEmbedUrl(url: string): string | null {
   const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
@@ -67,18 +68,12 @@ export default function Videos() {
                     : "w-full sm:flex-1 aspect-video"
                 } ${!hasVideo ? "cursor-default" : ""}`}
               >
-                <Image
-                  src={video.thumbnail}
-                  alt={video.title}
-                  fill
-                  sizes={
-                    isPortrait
-                      ? "256px"
-                      : "(max-width: 640px) 100vw, 50vw"
-                  }
-                  className={`object-cover transition-transform duration-500 ${
-                    hasVideo ? "group-hover:scale-105" : "opacity-70"
-                  }`}
+                <img
+                    src={`${basePath}${video.thumbnail}`}
+                    alt={video.title}
+                    className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 ${
+                      hasVideo ? "group-hover:scale-105" : "opacity-70"
+                    }`}
                 />
 
                 <div
