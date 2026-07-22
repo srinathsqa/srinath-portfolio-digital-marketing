@@ -8,8 +8,8 @@ export const profile = {
     "I help businesses improve online visibility, generate qualified leads, and achieve measurable growth through data-driven digital marketing strategies.",
   about:
     "I'm a Digital Marketing Specialist with over 1.8 years of experience helping businesses grow through SEO, AI SEO (GEO & AEO), Organic Social Media Marketing, SMO, Content Marketing, Analytics, and Conversion Optimization. I have worked across multiple industries, improving search visibility, website performance, user engagement, brand awareness, and authority building through data-driven marketing strategies. My approach combines creativity, analytics, and continuous optimization while expanding my expertise in Meta Ads and emerging AI-driven marketing trends.",
-  email: "hello@srinath.example.com",
-  phone: "+91 00000 00000",
+  email: "srinathofficalwork2603@gmail.com",
+  phone: "+91 8754572917",
   socials: {
     linkedin: "https://www.linkedin.com/in/srinathsekar/",
     instagram: "https://www.instagram.com/srinath_pix",
@@ -19,11 +19,11 @@ export const profile = {
 };
 
 export const rotatingRoles = [
-  "SEO",
+  "Full-stack Digital Marketing",
+  "AI SEO",
   "Meta Ads",
   "Social Media Marketing",
   "Content Marketing",
-  "Analytics",
 ];
 
 export const skills = [
@@ -61,7 +61,7 @@ export const experience = [
       "Managed social media accounts, content creation, and engagement strategy, including building and running the content calendar.",
       "Handled LinkedIn client accounts for post creation and organic reach growth, coordinating with clients and the team.",
       "Set up Meta Ads campaigns for manager review and approval.",
-      "Built performance reports using Google Analytics and Looker Studio.",
+      "Built performance reports using Google Analytics/Excel and Looker Studio.",
     ],
     responsibilities: [
       "SEO",
@@ -100,12 +100,12 @@ export const experience = [
       "Technical SEO",
       "Competitor Analysis",
       "Google Search Console",
-      "SEMrush",
+      "Ahrefs",
       "Google Analytics",
       "Google Tag Manager",
       "Google Merchant Center",
       "META Optimization",
-      "Schema",
+      "Schema Markup",
       "Link Building",
     ],
   },
@@ -179,3 +179,5 @@ export const navLinks = [
   { label: "Videos", href: "#videos" },
   { label: "Contact", href: "#contact" },
 ];
+
+

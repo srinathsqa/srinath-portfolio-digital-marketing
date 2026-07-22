@@ -25,7 +25,6 @@ export default function About() {
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
-
         </motion.div>
 
         <motion.div
