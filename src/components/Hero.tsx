@@ -128,13 +128,10 @@ export default function Hero() {
             style={{ x: imageX, y: imageY }}
             className="relative h-full w-full overflow-hidden rounded-[28px] border border-line bg-surface"
           >
-            <Image
-              src="/images/profile/hero-portrait.png"
+            <img
+              src="/srinath-portfolio-digital-marketing/images/profile/hero-portrait.png"
               alt={profile.name}
-              fill
-              sizes="(max-width: 768px) 320px, 420px"
-              className="object-cover"
-              priority
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </motion.div>
           <div className="absolute -inset-3 -z-10 rounded-[32px] border border-signal/20" />
