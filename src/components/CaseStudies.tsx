@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/lib/data";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import { basePath } from "@/lib/basePath";
 
 export default function CaseStudies() {
   return (
@@ -28,14 +29,12 @@ export default function CaseStudies() {
               className="grid grid-cols-1 lg:grid-cols-2 gap-0 overflow-hidden rounded-3xl border border-line bg-surface"
             >
               <div className="relative aspect-[16/10] lg:aspect-auto">
-                <Image
-                  src={study.image}
-                  alt={study.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
+                  <img
+                    src={`${basePath}${study.image}`}
+                    alt={study.title}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
 
               <div className="p-8 md:p-10 flex flex-col justify-center">
                 <div className="flex flex-wrap items-baseline justify-between gap-2 mb-6">
